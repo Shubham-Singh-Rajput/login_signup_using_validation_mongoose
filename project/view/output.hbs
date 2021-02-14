@@ -1,0 +1,24 @@
+<ul>
+    {{#each USER}}
+    <li>ID:{{this._id}}</li>
+    <li>NAME:{{this.name}}</li>
+    <li>EMAIL:{{this.email}}</li>
+    <hr>
+    <ul>
+        <h1>BLOGS ARE</h1>
+        {{#each this.data}}
+        <br>
+        <li>ID:{{this._id}}<br>
+        TITLE:{{this.Btitle}}<br>
+        BODY:{{this.body}}</li>
+        {{/each}}
+    </ul>
+    {{/each}}
+</ul>
+
+<br>
+<hr>
+<a href="/blogs"><h1>ADD BLOCk</h1></a>
+<br>
+<hr>
+<a href="/login"><h1>LOGOUT</h1></a>
